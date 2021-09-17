@@ -14,9 +14,9 @@
             <h1>Dojo weather</h1>
         
                 <ul class="links">
-                  <li> <a href="#">Chicago</a></li> 
-                    <li><a href="#">Burbank</a></li>
-                    <li><a href="#">Atlanta</a></li>
+                  <li onclick="loading()"> <a href="#">Chicago</a></li> 
+                    <li onclick="loading()"><a href="#">Burbank</a></li>
+                    <li onclick="loading()"><a href="#">Atlanta</a></li>
                     
                     
                     
@@ -33,10 +33,10 @@
     <form action="www.google.com" class="pet">Show temperature in:<label>
 
 
-        <select onchange="alertAnimal(this)" name="animal" id="animal">
-            <option value="any pet">&#x2103;</option>
-            <option value="cat">Cat</option>
-            <option value="dog">Dog</option>
+        <select onchange="alertAnimal(this)" name="temp" id="temp">
+            <option value="C">&#x2103;</option>
+            <option value="F">&#x2103;</option>
+            
         </select>
     </form>
             
@@ -46,6 +46,7 @@
                 <div class="top-1">
                     <h2>Today</h2>
                     <img src="assets 2/some_clouds.png" alt="rain" class="img">
+                   
                     <div class="content">
                     <p id="pet">23 &deg;</p>
                     <p>99 &deg;</p>
@@ -54,6 +55,7 @@
                 <div class="top-1">
                     <h2>Tommorow</h2>
                     <img src="assets 2/some_rain.png" alt="rain" class="img">
+                   
                     <div class="content">
                     <p>23 &deg;</p>
                     <p>99 &deg;</p>
@@ -62,6 +64,7 @@
                 <div class="top-1">
                     <h2>Friday</h2>
                     <img src="assets 2/some_sun.png" alt="rain" class="img">
+                    
                 <div class="content">
                     <p>23 &deg;</p>
                     <p>99 &deg;</p>
@@ -70,6 +73,7 @@
                 <div class="top-1">
                     <h2>Saturday</h2>
                     <img src="assets 2/some_clouds.png" alt="rain" class="img">
+                    
                 <div class="content">
                     <p>23 &deg;</p>
                     <p>99 &deg;</p>
@@ -80,11 +84,15 @@
                 
             </div>
             <footer>
+                <div class="accept">
                 <img src="assets 2/cookie.png" alt="cookie" class="cook">
-                <h2>Stop, Cookie time!</h2>
-                <p>We can make all the cookies you want and you will ever need in your lifetime you  little elf!<br>
-                Also, feel free to share with Dumbledore and he-who-must-not be named :D</p>
-                <button id="btn">I Accept</button>
+                <h2>Stop, Cookie time!</h2>       
+                <p>We can make all the cookies you want and you will ever need in your lifetime you  little elf!
+                    Also, feel free to share with Dumbledore and he-who-must-not be named :D</p>
+                
+                <button id="btn" onclick="accept()">I Accept</button>
             </footer>
+        </div>
 </body>
+<script src="script.js"></script>
 </html>
